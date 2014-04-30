@@ -1,0 +1,110 @@
+form1.register{
+    width: auto;
+    margin: auto;
+    height: auto;
+    background-color:#fff;
+    padding:auto;
+}
+
+/* Sets the font and margin size for the details*/
+form1 p{
+    font-size: 8pt;
+    clear:both;
+    margin: auto;
+    color:gray;
+    padding:4px;
+}
+
+/* Edits the 1st table of the registration table*/
+form1.register fieldset.row1
+{
+    width: auto;
+    padding: auto;
+    float:none;
+    border-top: 1px solid #F5F5F5;
+    margin-bottom: auto;
+}
+
+/* Edits the 2nd table within the 1st table with the code below */
+form1.register fieldset.row2
+{
+    border: inset;
+    height: auto;
+    padding: auto;
+    float: none;
+}
+
+/* Changes the text font and size to be different from normal text */
+form1.register legend
+{
+    color: black;
+    padding: auto;
+    margin-left: auto;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/*	edits the label that are in the registration page to be 
+	a certain style
+ */
+form1.register label{
+    color: #444;
+    width: center;
+    float: left;
+    text-align: right;
+    margin-right: 10px;
+    margin-top: auto;
+}
+
+/* Edits the radio buttons to be place at a specific location when this css is used*/
+form1.register label2{
+    color: #444;
+    width: center;
+    float: left;
+    text-align: left;
+    margin-left: 8px; 
+}
+
+/* Textbox size and margin is set by the code below */
+form1.register input{
+    width: 140px;
+    color: #505050;
+	float: left;   
+}
+
+/* Changes the size of the radio button */
+form1.register input[type=radio]
+{
+	width: 15px;
+}
+
+/* All codes below edits the textbox to look nicer
+*/
+form1.register input[type=text]
+{
+    border: 1px solid #E1E1E1;
+    height: 20px;
+}
+
+form1.register input[type=int]
+{
+    border: 1px solid #E1E1E1;
+    height: 20px;
+}
+
+form1.register input[type=password]
+{
+    border: 1px solid #E1E1E1;
+    height: 20px;	
+}
+
+form1.register input[type=email]
+{
+	border: 1px solid #E1E1E1;
+	height: 20px;
+}
+
+form1.register input[type=tel] {
+    border: 1px solid #E1E1E1;
+    height: 20px
+}

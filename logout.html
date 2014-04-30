@@ -1,4 +1,8 @@
 <html>
+	<? 
+	session_start(); //Start the current session
+	session_destroy(); // destroys the session
+	?>
 	<head>
 	<link href="mystyle.css" rel="stylesheet" type="text/css"/>
 	<title> Home page </title>
@@ -15,9 +19,6 @@
 	<div class = "menu">
 	<center>
 	<a href="test.html">Home</a>
-	<a href="registerMember.html">Register page</a>
-	<a href="help.html">Help</a>
-	<a href="admin_login.html">Login</a>
 	</center>
 	<p />
 	</div>
@@ -39,24 +40,10 @@
 	</div>
 	</div>
 	<!--End of Right side column -->
-	
 	<!-- Start of Body Content-->
 	<div class = "content">
-	<h3> Welcome to the Home Page of BooksRus </h3>
+	You have now logged out.
 	
-	<p />
-	We welcome any bookworm, plain readers or just readers to our site!
-	<p />
-	We have book related competitions every now and then so make sure you guys keep your eyes and ears open.
-	<p /> 
-	To register in advance for competitions in the future, just <a href ="registerMember.php">click here</a> or click on the register page tab above.
-	<p />
-	To our registered users who have been with us over the 
-	pass year we have some offers available to you waiting in your email, check it out now!
-
-	<h6>
-	Many Thanks<br />
-	BooksRus Team </h6>
 	</div>
 	<!-- End of Body Content -->
 	

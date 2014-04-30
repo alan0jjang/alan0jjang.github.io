@@ -17,7 +17,6 @@
 	<a href="test.html">Home</a>
 	<a href="registerMember.html">Register page</a>
 	<a href="help.html">Help</a>
-	<a href="admin_login.html">Login</a>
 	</center>
 	<p />
 	</div>
@@ -39,24 +38,21 @@
 	</div>
 	</div>
 	<!--End of Right side column -->
-	
 	<!-- Start of Body Content-->
 	<div class = "content">
-	<h3> Welcome to the Home Page of BooksRus </h3>
 	
-	<p />
-	We welcome any bookworm, plain readers or just readers to our site!
-	<p />
-	We have book related competitions every now and then so make sure you guys keep your eyes and ears open.
-	<p /> 
-	To register in advance for competitions in the future, just <a href ="registerMember.php">click here</a> or click on the register page tab above.
-	<p />
-	To our registered users who have been with us over the 
-	pass year we have some offers available to you waiting in your email, check it out now!
+	<!-- <form id="loginForm" name="loginForm" method="post" action="login-exec.php"> -->
+	<?php
 
-	<h6>
-	Many Thanks<br />
-	BooksRus Team </h6>
+	// The value of the variable name is found
+	echo "<h1>Hello " . $_GET["EventID"] . "</h1>";
+	 
+	// The value of the variable age is found
+	//echo "<h1>You are " . $_GET[""] . " years old </h1>";
+
+	?>
+
+	
 	</div>
 	<!-- End of Body Content -->
 	

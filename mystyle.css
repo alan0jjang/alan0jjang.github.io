@@ -1,0 +1,177 @@
+/* Sets the body to this default */
+body {
+	background-color: #9999FF;
+	font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+	min-width: 600px;
+}
+
+/* Style for the header */
+div.header {
+	height: auto;
+	text-align: center;
+	background-color: #CCCCFF;
+	color: white;
+	background-image: url(images/books.jpg);
+}
+div.header h1 {
+	margin: 0px ;
+	padding: 15px;
+}
+
+/* Header style end*/
+
+/* Menu style Start*/
+
+/*	The style of the menu's are covered below
+	div.menu sets the background of the menu bar
+ */
+div.menu {
+	margin: 10px;
+	padding-top: 15px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 3px;
+	border: 0px solid blue;
+	background-color: #CCCCFF;
+	width: auto; 
+}
+/* This sets each of the menu button to a certain style */
+div.menu a {
+	height: auto;
+	margin: 1%;
+	padding-top: 5px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 5px;
+	text-align: center;
+	font-size:12pt;
+	font-weight: bold;
+	background-color: #003399;
+	color: white;
+	border-style: outset;
+	border-width: 3px;
+	text-decoration: none;
+}
+/* this sets the button to light up when the mouse hovers over it */
+div.menu a:hover {
+	background-color: blue;
+	text-decoration: underline;
+}
+
+/* Menu style end*/
+
+/*	Body Style start 
+	sets the body a certain position and anything inside is rendered to fit
+*/
+div.content {
+	padding: 10px;
+	margin-top: 20px;
+	margin-left: 10px;
+	margin-right: 250px;
+	border:3px inset;
+	background-color: white;
+}
+/* Body style end*/
+
+/*	Right Column style 
+	sets up a right side bar of its own
+*/
+div.sidebar {
+	margin: 10px;
+	border: 3px outset;
+	float: right;
+	width: 200px;
+}
+/* styles the heading of the right side bar to be different to the text below */
+div.borderbox {
+	clear : both;
+	float : none;
+	padding-top: auto;
+	height: auto; 
+	margin-top : 5px;
+	font-size: 16px;
+	text-align: center;
+	background-color : #5C5E5F;
+	color : #FFFFFF;
+	border : #A5A4A4 1px solid;
+}
+/* sets the content inside the right side box to be ordered */
+div.rightcol_box {
+	width : 200px;
+	background-color : #FFFFFF;
+	text-align: center;
+	font-size: 14px;
+	overflow : hidden;
+}
+/* End of Right Column style */
+
+/*	Start of the footer style 
+	sets a bar for the footer and seperate the bar from the body
+*/
+div.footer {
+	margin : auto;
+	width : auto;
+	height : 20px;
+	background-color : #5C5E5F;
+	text-align: center;
+	font-size : 10px;
+	color : #C8C6C6;
+}
+/* sets a distance from the body, so it doesn't look cluttered */
+div.footer_spacing {
+	clear : both;
+	float : none;
+	border-top : #fff 20px solid;
+}
+/* End of footer style */
+
+/*	sets the all the body content to be within the width of the wrapper
+	this makes it so the website doesn't look messy
+ */
+div.wrapper {
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+}
+body {
+	text-align: center;
+}
+div.wrapper {
+	Text-align: left;
+}
+/* uses an image of a jpeg file and repeats it to make it a design on the site */
+body {
+	background-image: url(images/shadow.jpg);
+	background-position: center;
+	background-repeat: repeat-y;
+}
+/* text are editted accordingly in the register table */
+legend {
+	font-size: large;
+	font-weight: bold;
+}
+/* sets the color and margin of the register tables */
+fieldset
+{
+	background-color: #ddddff;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+/* styles the fields for the register detail/s to be aligned */
+label
+{
+	float: left;
+	margin-right: 20px;
+	width: 200px;
+	text-align: right;
+}
+div.field
+{
+	clear: both;
+}
+
+div.submit{
+	margin-left:270px;
+	text-align: auto;
+}
