@@ -22,5 +22,8 @@
 	alert('Please provide a valid email address');
 	return false;
 	}
-	
+	else {
+	alert('We are experiencing an unexpected drop, please try again later')
+	return false;
+	}
 	}

@@ -35,7 +35,7 @@
 	  session_start();
 	  $_SESSION["Login"] = "YES";
 	  echo "<h1>You are now logged correctly in</h1>";
-	  echo "<p><a href='document.php'>Link to protected file</a><p/>";
+	  echo "<p>Link to protected file <p/>";
 	 
 	}
 	else {
@@ -44,7 +44,7 @@
 	  session_start();
 	  $_SESSION["Login"] = "NO";
 	  echo "<h1>You are NOT logged correctly in </h1>";
-	  echo "<p><a href='document.php'>Link to protected file</a></p>";
+	  echo "<p>Link to protected file</p>";
 	 
 	}*/
 	
@@ -55,11 +55,11 @@
 	$_SESSION["username"] = $username;
 	$_SESSION["password"] = $password; 
 	//$_SESSION['loggedin'] = "YES"; // Set it so the user is logged in!
-	header("location:login_success.php");
+	header("location:login_success.html");
 	}
 	else {
 	echo ("<script type='text/javascript'>alert('Wrong Username or Password');</script>"); 
-	include 'admin_login.php';
+	include 'admin_login.html';
 	}
 	?>
 

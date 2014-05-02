@@ -1,6 +1,9 @@
 <html>
 	<head>
 	<link href="mystyle.css" rel="stylesheet" type="text/css"/>
+	<script type="text/javascript" src="submitbutton.js" language="Javascript">
+	</script>
+	
 	<title> Home page </title>
 	</head>
 	
@@ -15,8 +18,10 @@
 	<div class = "menu">
 	<center>
 	<a href="test.html">Home</a>
-	<a href="registerMember.html">Register</a>
+	<a href="registerMember.html">Register page</a>
 	<a href="help.html">Help</a>
+	<a href="admin_login.html">Login</a>
+	
 	</center>
 	<p />
 	</div>
@@ -41,7 +46,7 @@
 	
 	<!-- Start of Body Content-->
 	<div class = "content">
-	<form name="myForm" action="check_login.php" onsubmit="return validateForm()" method="post">
+	<form name="myForm" action="" onsubmit="return submitbutton()" method="Post"> <!--check_login.php -->
 		<fieldset class="row1">
 		<legend> Login Page </legend>
 		<p />
