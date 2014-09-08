@@ -64,19 +64,24 @@ div.menu a:hover {
 	sets the body a certain position and anything inside is rendered to fit
 */
 a#forkme_banner {
-  display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 138px;
+	height: 138px;
+	display: block;
+	background: transparent url(images/fork-sprite.png) 0 0 no-repeat;
+	text-indent: -9000px;
+	z-index: 3;
 }
-a#forkme_banner {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 138px;
-  height: 138px;
-  display: block;
-  background: transparent url(images/fork-sprite.png) 0 0 no-repeat;
-  text-indent: -9000px;
-  z-index: 3;
-}
+	
+#nav-sns{text-align:right;}
+#nav-sns.btn-twitter {
+ 	top: 0;
+	right: 0;
+	background: transparent url(images/sns Icon.jpg) 0 0 no-repeat;
+	}
+
 div.content {
 	padding: 10px;
 	margin-top: 20px;
