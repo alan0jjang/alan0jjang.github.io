@@ -3,7 +3,8 @@
 	<link href="mystyle.css" rel="stylesheet" type="text/css"/>
 	<link href="register.css" rel="stylesheet" type="text/css"/> 
 	<script type="text/javascript" src="validate.js"  language="Javascript" >
-
+	</script>
+	<script type="text/javascript" src="submitbutton.js" language="Javascript"> 
 	</script>
 	<title> Registration Page </title>
 	</head>
@@ -17,10 +18,11 @@
 
 	<div class = "menu">
 	<center> <!-- links to other pages -->
-	<a href="test.html">Home</a>
+	<a href="index.html">Home</a>
 	<a href="registerMember.html">Register page</a>
 	<a href="help.html">Help</a>
 	<a href="admin_login.html">Login</a>
+	<a href="ContactUs.html">Contact Us </a>
 	</center>
 	<p />
 	</div>
@@ -47,16 +49,16 @@
 	<h6><font color="red">N.B: Please note that the * requires you to fill in your details. <br />
 	You cannot leave it blank </h6> </font>
 	
-	
 	<form1 action="" class="register" > <!-- This sets the format for the table -->
+	
 	<!-- Start of register detail -->
-	<form name="myForm" action="checkRegister.php" onsubmit="return validateForm()" method="post">
+	<form name="myForm" action="" onsubmit="return submitbutton()" method="post"> <!-- action="checkRegister.php"--> 
 	<fieldset class="row1"> <!-- sets the outer boarder of the register form -->
 	<legend> </legend>
 		<!-- sets the 2nd table within the 1st of the register details, for personal details -->
 	<fieldset class="row2">
 		<legend> Personal Details </legend>
-		<p />
+		<p/>
 		
 		<label for="firstname"> First Name*: </label>
 		<input type="text" name="Firstname" />
