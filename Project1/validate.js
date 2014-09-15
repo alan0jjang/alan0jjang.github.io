@@ -24,6 +24,6 @@
 	}
 	else {
 	alert('We are experiencing an unexpected drop, please try again later')
-	return false;
+	return true;
 	}
 	}
