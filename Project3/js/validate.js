@@ -42,28 +42,38 @@
 // 	}
 // }
 
-function validate()
-{
-	if ((document.contact.name.value==""))
-	{
-		alert("You must fill in your name.")
-		return false
-	}
-	if ((document.contact.email_add.value=="")) 
-	{
-		alert("You must fill in your email")
+function validate() {
+	if ($("#name").val() === "") {
+		alert("You must fill in your name.");
 		return false;
-
 	}
-	else
-		return true
-
+	if ($("#email_add").val() === "") {
+		alert("You must fill in your email");
+		return false;
+	}
+	else {
+		return true;
+	}
 }
 
-$(document).ready(function(){
-$("button").on("click", function(){
-  var message = $("<span>Call 1-555-jquery-air to book this tour</span>");
-  $(".usa").append(message);
-  $("button").remove();
-});
+// $(document).ready(function(){
+// $("button").on("click", function(){
+//   var message = $("<span>You have successfully submitted a form</span>");
+//   $(this).after(message);
+//   $(this).remove();
+// });
+// });
+
+$(document).ready(function() {
+	// //$(".contact-success").hide();
+
+	// $(".form").submit(function(e) {
+	// 	var isValid = validate();
+	// 	if (isValid) {
+	// 		$(".contact-form").slideUp();
+	// 		$(".contact-success").slideDown();
+	// 		e.preventDefault();
+	// 	}
+	// 	return false;
+	// });
 });
