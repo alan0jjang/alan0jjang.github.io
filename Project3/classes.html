@@ -103,40 +103,40 @@
 		<section>
 			<div class="container well">
 				<div class="row">
-					<div class="col-lg-4 col-md-4 col-sm-6">
+					<div id="col1" class="col-lg-4 col-md-4 col-sm-6">
 						<h2>Heading</h2>
 						<p>
 							Classes will be explained: Lorem ipsum odio nec euismod turpis sem ullamcorper.
 						</p>
 						<p>
-							<a class="btn btn-default" href="#" role="button">More details >></a>
+							<div id='btn1' class="btn btn-default" role="button">More details >></div>
 						</p>
 					</div>
-					<div class="col-lg-4 col-md-4 col-sm-6">
+					<div id="col2" class="col-lg-4 col-md-4 col-sm-6">
 						<h2>Heading</h2>
 						<p>
 							Classes will be explained: Lorem ipsum odio nec euismod turpis sem ullamcorper.
 						</p>
 						<p>
-							<a class="btn btn-default" href="#" role="button">More details >></a>
+							<div id="btn2" class="btn btn-default" role="button">More details >></div>
 						</p>
 					</div>
-					<div class="col-lg-4 col-md-4 col-sm-6">
+					<div id="col3" class="col-lg-4 col-md-4 col-sm-6">
 						<h2>Heading</h2>
 						<p>
 							Classes will be explained: Lorem ipsum odio nec euismod turpis sem ullamcorper.
 						</p>
 						<p>
-							<a class="btn btn-default" href="#" role="button">More details >></a>
+							<div id="btn3" class="btn btn-default"  role="button">More details >></div>
 						</p>
 					</div>
-					<div class="col-lg-4 col-md-4 col-sm-6">
+					<div id="col4" class="col-lg-4 col-md-4 col-sm-6">
 						<h2>Heading</h2>
 						<p>
 							Classes will be explained: Lorem ipsum odio nec euismod turpis sem ullamcorper.
 						</p>
 						<p>
-							<a class="btn btn-default" href="#" role="button">More details >></a>
+							<div id="btn4" class="btn btn-default" role="button">More details >></div>
 						</p>
 					</div>
 				</div>
@@ -159,5 +159,24 @@
 
 		<!-- Bootstrap Core Javascript-->
 		<script src="js/bootstrap.min.js"></script>
+
+		<script> 
+		$(document).ready(function(){
+			$('#btn1').on('click', function(){
+				$('#col1').slideUp(1000).slideDown(500);
+			})
+			$('#btn2').on('mouseover', function(){
+				$('#col2').toggle(1000).toggle(500);
+			})
+			$('#btn3').on('click', function(){
+				$('#col3').fadeOut(1000).fadeIn(1000);
+			})
+			$('#btn4').on('click', function(){
+				$('#col4').fadeIn(1000).html("This is the message that is dispalyed after you click the button. huehuehue");
+			})
+		});
+
+		</script>
+
 	</body>
 </html>
