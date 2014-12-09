@@ -162,17 +162,17 @@
 
 		<script> 
 		$(document).ready(function(){
-			$('#btn1').on('click', function(){
+			$('#btn1').on('mouseover', function(){
 				$('#col1').slideUp(1000).slideDown(500);
 			})
-			$('#btn2').on('mouseover', function(){
-				$('#col2').toggle(1000).toggle(500);
+			$('#btn2').on('click', function(){
+				$('#col2').toggle(500).toggle(500);
 			})
 			$('#btn3').on('click', function(){
 				$('#col3').fadeOut(1000).fadeIn(1000);
 			})
 			$('#btn4').on('click', function(){
-				$('#col4').fadeIn(1000).html("This is the message that is dispalyed after you click the button. huehuehue");
+				$('#col4').fadeIn(1000).html("This is the message that is displayed after you click the button. huehuehue");
 			})
 		});
 
