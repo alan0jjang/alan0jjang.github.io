@@ -66,7 +66,7 @@
 				<div class="panel panel-default">
 					<div class="panel-body">
 						<div class="lead seaction-lead"> To contact us, fill in the form below</div>
-						<form class="form" role="form" name="contact" action="#" method="POST">
+						<form class="form" role="form" name="contact">
 							<div class="form-group">
 								<label for="name">Name:</label>
 								<input type="text" class="form-control" placeholder="Name" name="name">
@@ -142,6 +142,17 @@
 
 		<!-- Bootstrap Core Javascript-->
 		<script src="js/bootstrap.min.js"></script>
+		<script>
+		$(document).ready(function(){
+
+			var success = "Thank you for submitting your form, we will be in contact soon"
+			$('#submit').on('click', function(){
+				$('.panel-body').slideUp(-200).slideDown(1000).html(success);
+
+			});
+
+		});
+		</script>
 	</body>
 	<!-- End of body -->
 </html>

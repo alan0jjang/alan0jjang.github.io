@@ -105,38 +105,38 @@
 				<div class="row">
 					<div id="col1" class="col-lg-4 col-md-4 col-sm-6">
 						<h2>Heading</h2>
-						<p>
+						<p class="panel-body">
 							Classes will be explained: Lorem ipsum odio nec euismod turpis sem ullamcorper.
 						</p>
 						<p>
-							<div id='btn1' class="btn btn-default" role="button">More details >></div>
+							<div data-col="col1" class="btn btn-default col-btn" role="button">More details >></div>
 						</p>
 					</div>
 					<div id="col2" class="col-lg-4 col-md-4 col-sm-6">
 						<h2>Heading</h2>
-						<p>
+						<p class="panel-body">
 							Classes will be explained: Lorem ipsum odio nec euismod turpis sem ullamcorper.
 						</p>
 						<p>
-							<div id="btn2" class="btn btn-default" role="button">More details >></div>
+							<div data-col="col2" class="btn btn-default col-btn" role="button">More details >></div>
 						</p>
 					</div>
 					<div id="col3" class="col-lg-4 col-md-4 col-sm-6">
 						<h2>Heading</h2>
-						<p>
+						<p class="panel-body">
 							Classes will be explained: Lorem ipsum odio nec euismod turpis sem ullamcorper.
 						</p>
 						<p>
-							<div id="btn3" class="btn btn-default"  role="button">More details >></div>
+							<div data-col="col3" class="btn btn-default col-btn2" role="button">More details >></div>
 						</p>
 					</div>
 					<div id="col4" class="col-lg-4 col-md-4 col-sm-6">
 						<h2>Heading</h2>
-						<p>
+						<p class="panel-body">
 							Classes will be explained: Lorem ipsum odio nec euismod turpis sem ullamcorper.
 						</p>
 						<p>
-							<div id="btn4" class="btn btn-default" role="button">More details >></div>
+							<div data-col="col4" class="btn btn-default col-btn2" role="button">More details >></div>
 						</p>
 					</div>
 				</div>
@@ -162,19 +162,36 @@
 
 		<script> 
 		$(document).ready(function(){
-			$('#btn1').on('mouseover', function(){
-				$('#col1').slideUp(1000).slideDown(500);
-			})
-			$('#btn2').on('click', function(){
-				$('#col2').toggle(500).toggle(500);
-			})
-			$('#btn3').on('click', function(){
-				$('#col3').fadeOut(1000).fadeIn(1000);
-			})
-			$('#btn4').on('click', function(){
-				$('#col4').fadeIn(1000).html("This is the message that is displayed after you click the button. huehuehue");
-			})
+
+			var content = "My New Content"
+
+			$('.col-btn').on('click', function(){
+				var colId = $(this).attr('data-col');
+				$('#'+colId).toggle(200).toggle(200);
+				$('#'+colId+' .panel-body').html(content);
+			});
+
+			$('.col-btn2').on('mouseover', function(){
+				var colId = $(this).attr('data-col');
+				$('#'+colId).slideUp(-500).slideDown(1000);
+				$('#'+colId+' .panel-body').html(content);
+			});
+
 		});
+
+
+			// $('#btn1').on('mouseover', function(){
+			// 	$('#col1').slideUp(1000).slideDown(500);
+			// })
+			// $('#btn2').on('click', function(){
+			// 	$('#col2').toggle(500).toggle(500);
+			// })
+			// $('#btn3').on('click', function(){
+			// 	$('#col3').fadeOut(1000).fadeIn(1000);
+			// })
+			// $('#btn4').on('click', function(){
+			// 	$('#col4').fadeIn(1000).html("This is the message that is displayed after you click the button. huehuehue");
+			// })
 
 		</script>
 
