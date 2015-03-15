@@ -56,15 +56,26 @@ function validate() {
 	}
 }
 
-// $(document).ready(function(){
-// $("button").on("click", function(){
-//   var message = $("<span>You have successfully submitted a form</span>");
-//   $(this).after(message);
-//   $(this).remove();
-// });
-// });
+	$(document).ready(function(){
+		var success = "Thank you for submitting your form, we will be in contact soon"
+		
+		$('#submit').on('click', function(){
+			$('.panel-body').slideUp(-200).slideDown(200).html(success);
 
-$(document).ready(function() {
+		});
+	});
+
+	// $(document).ready(function(){
+	// 	var success = "Thank you for submitting your form, we will be in contact soon"
+		
+	// 	$('#submit').on('click', function(){
+	// 		$('.panel-body').slideUp(-200).slideDown(200).html(success);
+
+	// 	});
+	// });
+
+
+
 	// //$(".contact-success").hide();
 
 	// $(".form").submit(function(e) {
@@ -76,4 +87,4 @@ $(document).ready(function() {
 	// 	}
 	// 	return false;
 	// });
-});
+

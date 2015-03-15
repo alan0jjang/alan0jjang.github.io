@@ -81,7 +81,7 @@
 							</div>
 							<div class="form-group pull-right">
 								<button type="reset" class="btn btn-warning">Reset</button>
-								<button type="submit" class="btn btn-success" id="submit">Send</button>
+								<button id="submit" type="submit" class="btn btn-success">Send</button>
 							</div>
 						</form>
 					</div>
@@ -134,24 +134,27 @@
 		</div>
 		-->
 
-		<!-- Form validation file js-->
-		<script src="js/validate.js"></script>
+
 
 		<!-- jQuery version 1.11.1 -->
 		<script src="js/jquery-1.11.1.min.js"></script>
 
 		<!-- Bootstrap Core Javascript-->
 		<script src="js/bootstrap.min.js"></script>
+				
+
+		<!-- Form validation file js-->
+		<script src="js/validate.js"></script>
+
 		<script>
-		$(document).ready(function(){
+		// $(document).ready(function(){
 
-			var success = "Thank you for submitting your form, we will be in contact soon"
-			$('#submit').on('click', function(){
-				$('.panel-body').slideUp(-200).slideDown(1000).html(success);
+		// 	var success = "Thank you for submitting your form, we will be in contact soon"
+		// 	$('#submit').on('click', function(){
+		// 		$('.panel-body').slideUp(-200).slideDown(-200).html(success);
+		// 	});
 
-			});
-
-		});
+		// });
 		</script>
 	</body>
 	<!-- End of body -->
